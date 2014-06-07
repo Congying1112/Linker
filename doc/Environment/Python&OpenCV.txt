@@ -1,0 +1,12 @@
+Installation
+1. Python
+2. Opencv
+3. python-numpy
+4. copy file "D:\2-3rd_party_lib\opencv\build\python\2.7\x86cv2.pyd" to floder "C:\Python27\Lib\site-packages"
+
+Coding
+1. import cv2
+2. ...
+
+Remark:
+1. Version of Python and OpenCV

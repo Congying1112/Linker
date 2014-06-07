@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<!--[if IE 7]><html class="ie7" lang="zh"><![endif]-->
+<!--[if gt IE 7]><!-->
+<html lang="zh">
+<!--<![endif]-->
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Elaine's Timeline</title>
+<link href="static/css/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div class="content">
+  <div class="wrapper">
+    <div class="light"><i></i></div>
+    <hr class="line-left">
+    <hr class="line-right">
+    <div class="main">
+      <h1 class="title">Elaine's Timeline o(∩_∩)o</h1>
+      <div class="year">
+        <h2><a href="#">2014<i></i></a></h2>
+        <div class="list">
+          <ul>
+            <li class="cls">
+              <p class="date">6月6日</p>
+              <p class="intro">Hello Web World~</p>
+              <p class="version">&nbsp;</p>
+              <div class="more">
+                <p>Nice to meet you guys on the web</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="year">
+        <h2><a href="#">1984<i></i></a></h2>
+        <div class="list">
+          <ul>
+            <li class="cls">
+              <p class="date">11月12日</p>
+              <p class="intro">Hello World~</p>
+              <p class="version">&nbsp;</p>
+              <div class="more">
+                <p>老爸很开心</p>
+                <p>老妈很辛苦</p>
+                <p>Hey，那个小屁孩，你在哭什么:)</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="footer">
+  <div class="footer-content clearfix">
+    <div class="copyright"> Copyright © 2011-2014  All Rights Reserved </div>
+  </div>
+</div>
+<script type="text/javascript" src="static/js/jquery.min.js"></script>
+<script>
+	$(".main .year .list").each(function (e, target) {
+	    var $target=  $(target),
+	        $ul = $target.find("ul");
+	    $target.height($ul.outerHeight()), $ul.css("position", "absolute");
+	}); 
+	$(".main .year>h2>a").click(function (e) {
+	    e.preventDefault();
+	    $(this).parents(".year").toggleClass("close");
+	});
+	</script>
+</body>
+</html>

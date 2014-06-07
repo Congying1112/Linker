@@ -1,0 +1,4 @@
+1. python 2.7.6
+2. 添加环境变量: C:\Python27\Scripts
+3. cmd:	eady_install pip
+4. cmd:	pip install Flask
