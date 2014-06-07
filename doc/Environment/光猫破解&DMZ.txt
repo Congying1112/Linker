@@ -1,0 +1,10 @@
+光猫型号：贝尔I-240W-Q
+Steps:
+1. 用猫背后给的普通账户，密码登录
+2. 在浏览器输入192.168.1.1/usb.cgi?backup转到备份页面
+3. 在光猫上插入U盘，刷新界面保存配置文件
+4. 进入http://pan.baidu.com/s/1kTiaqdp下载router.rar
+5. 把U盘插在电脑上，用该软件打开U盘中的ctce8_XXXX_.cfg的文件
+6. 查找telecomadmin，telecomadmin就是超级账户，下面一排对面的就是密码
+7. 用超级账户登陆
+8. 应用-高级NAT配置-DMZ配置
