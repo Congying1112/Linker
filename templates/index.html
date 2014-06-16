@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Elaine's Web World</title>
+<link href="/static/css/home.css" rel="stylesheet" type="text/css" />
+</head>
+<body onload="chgCol();">
+</body>
+</html>
+
+
+<script language=javascript>
+var pos=10;
+function initArray(){
+this.length=initArray.arguments.length;
+for(var i=0;i<this.length;i++){this[i]=initArray.arguments[i];}}
+
+var col=new initArray("4b","5b","8b","8b");
+col[0]="yellow";
+col[1]="coral";
+col[2]="orange";
+col[3]="red";
+col[4]="greenyellow";
+col[5]="lime";
+col[6]="turquoise";
+col[7]="coral";
+col[8]="blueviolet";
+col[9]="violet";
+function chgCol()
+{
+	pos++;
+	if(pos<0||pos>9)
+		{pos=0;}
+	document.bgColor=col[pos];
+	setTimeout("chgCol()",3000);
+}
+
+</script>

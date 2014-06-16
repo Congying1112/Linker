@@ -1,0 +1,11 @@
+1. Preparing for REST API
+1.1 Set up permissions for REST resource operations from Magento Admin Panel.
+
+1.2 Configure the attributes for different users types in Magento Admin Panel. There are 3 different types of users in accessing the data: Admin, Customer, and Guest. Admin is the backend logged in user, Customer is the fronted logged in user, and Guest is a non-logged in fronted user.
+
+
+
+1. php的OAuth环境
+
+windows 下安装
+1. http://wangheng.org/under-windows-install-php-pear.html
