@@ -92,6 +92,9 @@ hr {
 	width: 100%;
 	margin-top: -10px;
 }
+
+
+
 .content {
 	padding: 50px 0;
 	min-height: 720px;
@@ -100,7 +103,7 @@ hr {
 }
 .content .wrapper {
 	position: relative;
-	/*background: url("../images/log/release-bg.png") no-repeat right top;*/
+	/*background: url("....") no-repeat right top;*/
 	width: 960px;
 	margin: 0 auto;
 }
@@ -118,21 +121,6 @@ hr {
 	height: 100%;
 	top: 0;
 	background: url("../images/log/light.png") no-repeat top center;
-}
-.content .line-left {
-	position: absolute;
-	left: 0;
-	top: 15px;
-	width: 70px;
-}
-.content .line-right {
-	position: absolute;
-	right: 0;
-	top: 15px;
-	width: 460px;
-}
-.content .main {
-	background: url("../images/log/line-bg.png") repeat-y 249px 0;
 }
 .content .title {
 	position: absolute;
