@@ -1,8 +1,0 @@
-1. check enviroment for server
-	1.1 check with "magento-check.php"
-	1.2 two unsatisfied requirments:
-		for mysql: add bin dir to system path
-		for php_curl: reinstall wamp....
-2. open from another machine
-	2.1 admin panel
-	2.2 system - Configuration - Web - Unsecure - Base URL : http://XXXXXX/
