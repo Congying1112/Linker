@@ -1,5 +1,41 @@
 body {
 	margin:0;
-	background:#89496b url(../images/bkgd2.jpg) no-repeat fixed center;
-	font:12px "Comic Sans MS","Microsoft YaHei",微软雅黑;
+	font-family: 12px "Comic Sans MS","Microsoft YaHei",微软雅黑;
+	background:#241a26; /*url("../images/bkgd3.png") fixed center no-repeat;*/
+}
+
+form {
+	width: 500px;
+}
+
+.back_img {
+	position: relative;
+	height: 562px;
+	margin: 0 auto;
+	/*background: url("../images/bkgd3.png") fixed center no-repeat;*/
+}
+form.guest {
+	position: relative;
+	height: 100%;
+}
+.back_img .message{
+	position: relative;
+	margin: 300px;
+}
+
+
+input {
+	transition: all 0.30s ease-in-out;
+	-webkit-transition: all 0.30s ease-in-out;
+	-moz-transition: all 0.30s ease-in-out;
+	border: #35a5e5 1px solid;
+	border-radius: 4px;
+	outline: none;
+}
+
+input:focus {
+	border:#35a5e5 1px solid;
+	box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+	-webkit-box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+	-moz-box-shadow: 0 0 5px rgba(81, 203, 238, 1);
 }

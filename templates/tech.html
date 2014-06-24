@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width">
+		<title>{{page_header.title}}</title>
+		<meta property="og:locale" content="zh_CN">
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="http://abumiao.me/tech/">
+		<meta property="og:site_name" content="python&#39;s blog">
+		<link rel="stylesheet" id="crayon-css" href="/static/css/tech/crayon.min.css" type="text/css" media="all">
+		<link rel="stylesheet" id="crayon-theme-classic-css" href="/static/css/tech/classic.css" type="text/css" media="all">
+		<link rel="stylesheet" id="crayon-font-monaco-css" href="/static/css/tech/monaco.css" type="text/css" media="all">
+		<!--link rel="stylesheet" id="twentytwelve-fonts-css" href="/static/css/tech/css" type="text/css" media="all"-->
+		<link rel="stylesheet" id="twentytwelve-style-css" href="/static/css/tech/style.css" type="text/css" media="all">
+		<!--[if lt IE 9]>
+		<link rel='stylesheet' id='twentytwelve-ie-css'  href='http://pythonadv.com/wp-content/themes/twentytwelve/css/ie.css?ver=20121010' type='text/css' media='all' />
+		<![endif]-->
+		<link rel="stylesheet" id="wp-pagenavi-css" href="/static/css/pagenavi-css.css" type="text/css" media="all">
+		<script type="text/javascript" src="/static/js/jquery/jquery.js"></script>
+		<script type="text/javascript" src="/static/js/min/jquery-migrate.min.js"></script>
+		<script type="text/javascript" src="/static/js/min/crayon.min.js"></script>
+		<script type="text/javascript" src="/static/js/Loader_1432422.js"></script>
+		<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://pythonadv.com/xmlrpc.php?rsd">
+		<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://pythonadv.com/wp-includes/wlwmanifest.xml"> 
+		<meta name="generator" content="WordPress 3.6.1">
+			<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+	</head>
+	<body class="home blog custom-font-enabled single-author">
+		<div id="page" class="hfeed site">
+			<header id="masthead" class="site-header" role="banner">
+				<hgroup>
+					<h1 class="site-title">{{page_header.title}}</a></h1>
+					<h2 class="site-description">找个地方跟自己扯扯淡，顺便让小日子有迹可循</h2>
+				</hgroup>
+
+				<nav id="site-navigation" class="main-navigation" role="navigation">
+					<h3 class="menu-toggle">菜单</h3>
+					<div class="menu-2-container">
+						<ul id="menu-2" class="nav-menu">
+							{% for cat in catalog.cata_list %}
+								<li id="menu-item-143" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-143">{{cat}}<div class="vline"></div></li>
+							{% endfor %}
+						</ul>
+					</div>
+				</nav><!-- #site-navigation -->
+			</header><!-- #masthead -->
+
+			<div id="main" class="wrapper">
+				<div id="primary" class="site-content">
+					<div id="content" role="main">
+						<article id="post-152" class="post-152 post type-post status-publish format-standard hentry category-10 tag-28 tag-29">
+							<header class="entry-header">
+								<h1 class="entry-title"><a href="文章id" rel="bookmark">文章标题</a></h1>
+								<div class="comments-link">
+									<!--a href="http://pythonadv.com/152/#respond" title="《Dell R910 install Error system halted》上的评论"><span class="leave-reply">发表回复</span></a-->
+								</div><!-- .comments-link -->
+							</header><!-- .entry-header -->
+							<div class="entry-content">
+								<p>文章内容，段落1</p>
+								<p>文章内容，段落2</p>
+							</div><!-- .entry-content -->
+							<footer class="entry-meta">本条目发布于
+								<a href="文章id" title="10:04" rel="bookmark"><time class="entry-date" datetime="2013-10-16T10:04:18+00:00">2013 年 10 月 16 日</time></a>。属于<a href="category/目录id/" title="查看同目录中的全部文章" rel="category tag">目录名</a>分类，被贴了 <a href="tag/标签id1/" rel="tag">标签1</a>、<a href="tag/标签id2/" rel="tag">标签2</a> 标签。<span class="by-author">作者是<span class="author vcard"><a class="url fn n" href="author/作者id/" title="查看所有由该作者发布的文章" rel="author">作者名</a></span>。</span>
+							</footer><!-- .entry-meta -->
+						</article><!-- #post -->
+						<!--nav id="nav-below" class="navigation" role="navigation">
+							<h3 class="assistive-text">文章导航</h3>
+							<div class="nav-previous"><a href="http://pythonadv.com/page/2/"><span class="meta-nav">←</span> 早期文章</a></div>
+							<div class="nav-next"></div>
+						</nav--><!-- #nav-below .navigation -->
+					</div><!-- #content -->
+				</div><!-- #primary -->
+				<div id="secondary" class="widget-area" role="complementary">
+					<aside id="search-3" class="widget widget_search">
+						<form role="search" method="get" id="searchform" class="searchform" action="./python's blog   python's blog_files/python's blog   python's blog.htm">
+							<div>
+								<label class="screen-reader-text" for="s">搜索</label>
+								<input type="text" value="" name="s" id="s">
+								<input type="submit" id="searchsubmit" value="搜索(这里是假的,不要乱点)">
+							</div>
+						</form>
+					</aside>
+					<aside id="archives-3" class="widget widget_archive">
+						<h3 class="widget-title">文章归档(这里也是假的...)</h3>
+						<ul>
+							{% for month in month_list %}
+								<li>{{month}}</a></li>
+							{% endfor %}
+						</ul>
+					</aside>
+					<aside id="recent-comments-3" class="widget widget_recent_comments">
+						<h3 class="widget-title">近期评论(到底哪里是真的,( >﹏<。)～)</h3>
+						<ul id="recentcomments">
+							<li class="recentcomments">cywang发表在《<a href="这是个链接">这是个文章标题</a>》</li>
+						</ul>
+					</aside>
+				</div><!-- #secondary -->
+			</div><!-- #main .wrapper -->
+			<footer id="colophon" role="contentinfo">
+				<div class="site-info">
+				</div><!-- .site-info -->
+			</footer><!-- #colophon -->
+		</div><!-- #page -->
+		<script type="text/javascript" src="/static/js/wp-slimstat.js"></script>
+		<canvas width="35" height="35" style="display: none;"></canvas>
+		<script type="text/javascript" src="/static/js/navigation.js"></script>
+		<!-- Dynamic page generated in 1.970 seconds. -->
+		<!-- Cached page generated by WP-Super-Cache on 2013-10-16 10:10:20 -->
+		<!-- super cache --><div id="GWDANG_HAS_BUILT"></div>
+	</body>
+</html>

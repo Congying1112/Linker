@@ -5,7 +5,15 @@
 <title>Elaine's Web World</title>
 <link href="/static/css/home.css" rel="stylesheet" type="text/css" />
 </head>
-<body onload="chgCol();">
+<body>
+	<div class="back_img">
+		<form class="guest">
+			Hey, say something to me, pls<br />
+			<div>
+				<input class="message" type="text" name="message" value="">
+			</div>
+		</form>
+	</div>
 </body>
 </html>
 
@@ -13,8 +21,12 @@
 <script language=javascript>
 var pos=10;
 function initArray(){
-this.length=initArray.arguments.length;
-for(var i=0;i<this.length;i++){this[i]=initArray.arguments[i];}}
+	this.length=initArray.arguments.length;
+	for(var i=0;i<this.length;i++)
+	{
+		this[i]=initArray.arguments[i];
+	}
+}
 
 var col=new initArray("4b","5b","8b","8b");
 col[0]="yellow";
