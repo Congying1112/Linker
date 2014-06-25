@@ -1,3 +1,4 @@
+#coding=utf-8
 from flask import render_template,Flask
 from model import catalog, page_header
 
@@ -6,7 +7,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-	ph = page_header.ClsPageHeader("Elaine's")
+	ph = page_header.ClsPageHeader("Elaine's", "找个地方跟自己扯扯淡，顺便让小日子有迹可循")
 	cat = catalog.ClsCatalog()
 	month_list = 'Feb 2014', 'June 2014'
 	comment_list = 'comm test1', 'comm test2'
