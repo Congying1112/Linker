@@ -5,7 +5,7 @@ def LoadArticles():
 	articles = []
 	#
 	art = ClsArticle(id, "第一篇叽歪", "2014-06-24 19:00:18")
-	art.add_tag("jiwai")
+	art.add_tag("start")
 	art.add_p("终于有个不是很像样但总归是完完全全属于自己的窝了。")
 	art.add_p("过年的时候就开始有搭窝的想法到现在才有这么个不像样的东西，强烈鄙视一下自己的执行力。")
 	art.add_p("以下是反省：")
@@ -29,8 +29,7 @@ def LoadArticles():
 	#
 	id = id + 1
 	art = ClsArticle(id, "关于blog的YY", "2014-06-25 21:04:18")
-	art.add_tag("yy")
-	art.add_tag("blog")
+	art.add_tag("home_building")
 	art.add_p("火车上关于博客内容yy了一些东西，记录下：")
 	art.add_p("1. 文章不预先分类，只贴标签，可以多个，文章包括新写的和搬运过来的")
 	art.add_p("2. 系统自动分类并展示")
@@ -40,7 +39,7 @@ def LoadArticles():
 	#
 	id = id + 1
 	art = ClsArticle(id, "当前遇到的几个问题", "2014-06-25 21:04:18")
-	art.add_tag("problem")
+	art.add_tag("issue")
 	art.add_p("1. 手贱装了wordexpress、nginx、mysql，卸不干净...nginx每次开机自启动地很嗨皮")
 	art.add_p("2. 手动启动flask之后，总是时不时自己会断掉，不晓得是不是跟nginx有关系，一失手成千古恨啊")
 	art.add_p("3. python传中文字符给前端ok，但是前端要显示的话就跪了，错误提示：Internal Server Error[The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.]。综上，可得，当前界面所有的中文都是静态的...所以，请尽情鄙视...")
@@ -56,15 +55,15 @@ def LoadArticles():
 	#
 	id = id + 1
 	art = ClsArticle(id, "模板传中文变量前端显示时报错问题closed", "2014-06-26 11:16:57")
-	art.add_tag("problem")
+	art.add_tag("issue")
 	art.add_p("1. python文件首行添加：#coding=utf-8")
-	art.add_p("2. jinja模板中处：{{中文变量名.decode('utf8')}}")
+	art.add_p("2. jinja模板中文变量处：{{中文变量名.decode('utf8')}}")
 	art.add_p("都要这么设吗？ms稍显麻烦啊。不晓得还有没有其他更方便的办法")
 	articles.insert(0,art)
 	#
 	id = id + 1
 	art = ClsArticle(id, "catagory,article类封装", "2014-06-26 11:23:57")
-	art.add_tag("site_timeline")
+	art.add_tag("home_building")
 	art.add_p("将类别和文章封装成类，接下去持久化去搞个简单的数据库")
 	articles.insert(0,art)
 	#
