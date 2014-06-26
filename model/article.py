@@ -77,6 +77,15 @@ def LoadArticles():
 	art.add_p("解封:	iptables -I INPUT -s 192.168.1.138 -j ACCEPT")
 	articles.insert(0,art)
 	#
+	id = id + 1
+	art = ClsArticle(id, "git自用操作", "2014-06-26 19:55:43")
+	art.add_tag("git")
+	art.add_tag("dev_env")
+	art.add_p("下载版本库上的代码到本地，相当于svn的checkout: git clone https://github.com/*/*.git")
+	art.add_p("下载版本库上的更新到本地，相当于svn的update: git pull https://github.com/*/*.git")
+	art.add_p("土人就用了这两个...")
+	articles.insert(0,art)
+	#
 	"""id = id + 1
 	art = ClsArticle(id, "第一篇叽歪", "2014-06-26")
 	art.add_tag("")
