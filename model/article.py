@@ -86,6 +86,13 @@ def LoadArticles():
 	art.add_p("土人就用了这两个...")
 	articles.insert(0,art)
 	#
+	id = id + 1
+	art = ClsArticle(id, "linux log 重定向", "2014-06-26 20:06:54")
+	art.add_tag("linux")
+	art.add_p("python index.py 2>>my_web_world_20140626.log")
+	art.add_p("Mark一下，稍后整理...")
+	articles.insert(0,art)
+	#
 	"""id = id + 1
 	art = ClsArticle(id, "第一篇叽歪", "2014-06-26")
 	art.add_tag("")
