@@ -68,6 +68,16 @@ def LoadArticles():
 	art.add_p("将类别和文章封装成类，接下去持久化去搞个简单的数据库")
 	articles.insert(0,art)
 	#
+	id = id + 1
+	art = ClsArticle(id, "iptables管理单个ip以及ip段", "2014-06-26 15:40:32")
+	art.add_tag("linux")
+	art.add_p("屏蔽单个IP:	iptables -I INPUT -s 123.45.6.7 -j DROP")
+	art.add_p("屏蔽封123.0.0.1到123.255.255.254:	iptables -I INPUT -s 123.0.0.0/8 -j DROP")
+	art.add_p("屏蔽封123.45.0.1到123.45.255.254:	iptables -I INPUT -s 123.45.0.0/16 -j DROP")
+	art.add_p("屏蔽封123.45.6.1到123.45.6.254:		iptables -I INPUT -s 123.45.6.0/24 -j DROP")
+	art.add_p("解封:	iptables -I INPUT -s 192.168.1.138 -j ACCEPT")
+	articles.insert(0,art)
+	#
 	"""id = id + 1
 	art = ClsArticle(id, "第一篇叽歪", "2014-06-26")
 	art.add_tag("")
