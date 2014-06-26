@@ -1,5 +1,6 @@
 class ClsCatalog(object):
 	"""docstring for ClsCatalog"""
-	def __init__(self):
+	def __init__(self,id,name):
 		super(ClsCatalog, self).__init__()
-		self.cata_list = 'Home','Collections', 'Memo'
+		self.id = "cata_" + bytes(id)
+		self.name = name
