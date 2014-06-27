@@ -62,12 +62,6 @@ def LoadArticles():
 	articles.insert(0,art)
 	#
 	id = id + 1
-	art = ClsArticle(id, "catagory,article类封装", "2014-06-26 11:23:57")
-	art.add_tag("home_building")
-	art.add_p("将类别和文章封装成类，接下去持久化去搞个简单的数据库")
-	articles.insert(0,art)
-	#
-	id = id + 1
 	art = ClsArticle(id, "iptables管理单个ip以及ip段", "2014-06-26 15:40:32")
 	art.add_tag("linux")
 	art.add_p("屏蔽单个IP:	iptables -I INPUT -s 123.45.6.7 -j DROP")
