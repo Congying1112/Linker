@@ -338,9 +338,6 @@ object,
 video {
 	max-width: 100%;
 }
-.entry-content .twitter-tweet-rendered {
-	max-width: 100% !important; /* Override the Twitter embed fixed width */
-}
 
 /* Images */
 .alignleft {
@@ -484,12 +481,12 @@ html {
 body {
 	font-size: 14px;
 	font-size: 1rem;
-	font-family: Helvetica, Arial, sans-serif;
+	font-family: "Comic Sans MS","Microsoft YaHei",微软雅黑;
 	text-rendering: optimizeLegibility;
 	color: #444;
 }
 body.custom-font-enabled {
-	font-family: "Open Sans", Helvetica, Arial, sans-serif;
+	font-family: "Comic Sans MS","Microsoft YaHei",微软雅黑;
 }
 a {
 	outline: none;
