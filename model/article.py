@@ -117,6 +117,15 @@ def LoadArticles():
 	art.add_p("好了，梳理一下清晰了好多。悟以往之不谏，知来者之可追，实迷途其未远，觉今是而昨非:)")
 	articles.insert(0,art)
 	#
+	id = id + 1
+	art = ClsArticle(id, "九宫", "2014-06-29")
+	art.add_tag("emotion")
+	art.add_p("重要的事：跟骁骁语音长聊两个小时，有这么个好朋友每次不管多久没联系距离有多远环境差异有多大只要一聊思维都能同步上实在太不容易了，你要是在国内该有多好；订婚快乐:)")
+	art.add_p("有用的事：发现新的看书模式，边看边想，成型的想法po到微信上，好处是可以锻炼总结提炼能力，可以强迫自己思考，还能看到大家的想法。")
+	art.add_p("该反省的事：吃零食，不好好吃饭")
+	art.add_p("困了，睡觉~")
+	articles.insert(0,art)
+	#
 	"""id = id + 1
 	art = ClsArticle(id, "第一篇叽歪", "2014-06-26")
 	art.add_tag("")
