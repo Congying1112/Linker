@@ -16,11 +16,11 @@
 		<!--[if lt IE 9]>
 		<link rel='stylesheet' id='twentytwelve-ie-css'  href='http://pythonadv.com/wp-content/themes/twentytwelve/css/ie.css?ver=20121010' type='text/css' media='all' />
 		<![endif]-->
-		<link rel="stylesheet" id="wp-pagenavi-css" href="/static/css/pagenavi-css.css" type="text/css" media="all">
-		<script type="text/javascript" src="/static/js/jquery/jquery.js"></script>
-		<script type="text/javascript" src="/static/js/min/jquery-migrate.min.js"></script>
-		<script type="text/javascript" src="/static/js/min/crayon.min.js"></script>
-		<script type="text/javascript" src="/static/js/Loader_1432422.js"></script>
+		<!--link rel="stylesheet" id="wp-pagenavi-css" href="/static/css/pagenavi-css.css" type="text/css" media="all"-->
+		<script type="text/javascript" src="/static/js/jquery.min.js"></script>
+		<!--script type="text/javascript" src="/static/js/min/jquery-migrate.min.js"></script-->
+		<!--script type="text/javascript" src="/static/js/min/crayon.min.js"></script-->
+		<!--script type="text/javascript" src="/static/js/Loader_1432422.js"></script-->
 		<meta name="generator" content="WordPress 3.6.1">
 			<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
 	</head>
@@ -33,7 +33,7 @@
 				</hgroup>
 				<nav id="site-navigation" class="main-navigation" role="navigation">
 					<h3 class="menu-toggle">菜单</h3>
-					<div class="menu-2-container">
+					<div id="catalog" class="menu-2-container">
 						<ul id="menu-2" class="nav-menu">
 							{% for cata in cata_list %}
 								<li id={{cata.id}} class="menu-item menu-item-type-taxonomy menu-item-object-category">{{cata.name}}<div class="vline"></div></li>
@@ -114,9 +114,7 @@
 
 		<script type="text/javascript">
 	        //li操作
-	        var $menuLi = $("#menu-2-container ul li");
-	        $menuLi.click(
-		        function(){//标签页ajax控制代码，用于全站式ajax
+	        $("#catalog ul li").click(function(){
 		        	/*var detailLiInd = $("#detailWrap ul li").index(this);
 		        	var nav_action_id = $(this).attr('id');
 		        	if( ! $(this).hasClass("detailShown")){
@@ -124,9 +122,7 @@
 		        	}
 		        	//ajax
 		        	navList_action_ajax(detailLiInd,nav_action_id);*/
-		        	alert('test');
-		        }
-		    );
+		        	alert('test');});
         </script>
 	</body>
 </html>

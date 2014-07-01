@@ -27,5 +27,9 @@ def tech():
 def timeline():
     return render_template('timeline.html')
 
+@app.route('/test_js/')
+def test_js():
+    return render_template('test_js.html')
+
 if __name__ == '__main__':
     app.run('0.0.0.0', port=80)
