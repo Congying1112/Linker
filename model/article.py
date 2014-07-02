@@ -138,7 +138,16 @@ def LoadArticles():
 	art.add_p("1. Dr. Neal Krawetz")
 	art.add_p("2. http://www.ruanyifeng.com/blog/2011/07/principle_of_similar_image_search.html")
 	art.add_p("3. http://www.hackerfactor.com/blog/index.php?/archives/432-Looks-Like-It.html")
+	art.add_p("4. 几个牛掰的：谷歌Search by Image、百度识图、TinEye、淘宝图想")
 	art.add_p("reCaptcha待调研")
+	articles.insert(0,art)
+	#
+	id = id + 1
+	art = ClsArticle(id, "wordexpress、nginx、mysql卸载问题close", "2014-07-02")
+	art.add_tag("issue")
+	art.add_p("1. apt-get remove nginx")
+	art.add_p("2. 暴力删除nginx文件夹：/etc/nginx")
+	art.add_p("3. 因为当时直接解压使用，所以直接删除wordexpress文件夹：/srv/www/wordxpress")
 	articles.insert(0,art)
 	#
 	"""id = id + 1
