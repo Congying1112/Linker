@@ -155,7 +155,23 @@ def LoadArticles():
 	art.add_tag("psychology")
 	art.add_tag("fun")
 	art.add_p("原来这货还有专有名词，还是个这么八竿子打不着的名词...太扯了,以后我们也可以随便yy啥啥现象咩...")
-	art.add_p("Linker: http://en.wikipedia.org/wiki/Baader-Meinhof_Phenomenon#Frequency_illusion")
+	art.add_p("References:")
+	art.add_p("1. http://en.wikipedia.org/wiki/Baader-Meinhof_Phenomenon#Frequency_illusion")
+	art.add_p("2. http://localhost-8080.com/2010/10/baader-meinhof-phenomenon/")
+	art.add_p("Comments added later: 不对，这货不就是孕妇效应么@_@")
+	#
+	id = id + 1
+	art = ClsArticle(id, "Dr. Neal Krawetz", "2014-07-02")
+	art.add_tag("research")
+	art.add_tag("cv")
+	art.add_tag("algorithm")
+	art.add_tag("search_by_image")
+	art.add_p("Personal wensite: http://www.hackerfactor.com/")
+	art.add_p("Web: http://fotoforensics.com/")
+	art.add_p("Articels about search by image:")
+	art.add_p("1. http://www.hackerfactor.com/blog/index.php?/archives/536-Humongous.html")
+	art.add_p("2. http://www.hackerfactor.com/blog/index.php?/archives/551-Big-Data.html")
+	articles.insert(0,art)
 	#
 	"""id = id + 1
 	art = ClsArticle(id, "第一篇叽歪", "2014-06-26")
