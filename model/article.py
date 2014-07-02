@@ -150,6 +150,13 @@ def LoadArticles():
 	art.add_p("3. 因为当时直接解压使用，所以直接删除wordexpress文件夹：/srv/www/wordxpress")
 	articles.insert(0,art)
 	#
+	id = id + 1
+	art = ClsArticle(id, "Baader-Meinhof Phenomenon", "2014-07-02")
+	art.add_tag("psychology")
+	art.add_tag("fun")
+	art.add_p("原来这货还有专有名词，还是个这么八竿子打不着的名词...太扯了,以后我们也可以随便yy啥啥现象咩...")
+	art.add_p("Linker: http://en.wikipedia.org/wiki/Baader-Meinhof_Phenomenon#Frequency_illusion")
+	#
 	"""id = id + 1
 	art = ClsArticle(id, "第一篇叽歪", "2014-06-26")
 	art.add_tag("")
