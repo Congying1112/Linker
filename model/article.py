@@ -174,7 +174,7 @@ def LoadArticles():
 	articles.insert(0,art)
 	#
 	id = id + 1
-	art = ClsArticle(id, "Notes of <Tutorial: Similar Image Search>")
+	art = ClsArticle(id, "Notes of <Tutorial: Similar Image Search>", "2014-07-03")
 	art.add_tag("research")
 	art.add_tag("cv")
 	art.add_tag("algorithm")
