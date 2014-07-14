@@ -259,10 +259,10 @@ def LoadArticles():
 	articles.insert(0,art)
 	#
 	id = id + 1
-	art = ClsArticle(id, "", "2014-07-14")
+	art = ClsArticle(id, "纯扯淡", "2014-07-14")
 	art.add_tag("emotion")
-	art.add_p("")
-	art.add_p("")
+	art.add_p("又一个扯淡的周末晚上，价值观差异还是不小，不是故作清高，另一些方面自己可能清高程度更甚。完全理解，只是不认同，可能我这种才是最不好伺候的主儿吧，矫情巴拉地要什么心灵层平等的对话")
+	art.add_p("工作4年多，最好吃的夜宵，真的还是玉泉门口的白粥锅贴")
 	articles.insert(0,art)
 
 	"""id = id + 1
