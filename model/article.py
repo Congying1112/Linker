@@ -173,6 +173,13 @@ def LoadArticles():
 	art.add_p("2. http://www.hackerfactor.com/blog/index.php?/archives/551-Big-Data.html")
 	articles.insert(0,art)
 	#
+	id = id + 1
+	art = ClsArticle(id, "长见识了", "2014-07-04")
+	art.add_tag("fun")
+	art.add_p("康威生命游戏(Conway's Game): http://zh.wikipedia.org/wiki/%E5%BA%B7%E5%A8%81%E7%94%9F%E5%91%BD%E6%B8%B8%E6%88%8F")
+	art.add_p("细胞自动机(cellular automaton): http://zh.wikipedia.org/wiki/%E7%B4%B0%E8%83%9E%E8%87%AA%E5%8B%95%E6%A9%9F")
+	articles.insert(0,art)
+	#
 	"""id = id + 1
 	art = ClsArticle(id, "第一篇叽歪", "2014-06-26")
 	art.add_tag("")
